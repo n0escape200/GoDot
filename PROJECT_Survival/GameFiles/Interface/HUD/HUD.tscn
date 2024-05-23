@@ -1,0 +1,75 @@
+[gd_scene load_steps=6 format=3 uid="uid://yxn58o3pa8hq"]
+
+[ext_resource type="Theme" uid="uid://b0jmyynhu6670" path="res://new_theme.tres" id="1_7osub"]
+[ext_resource type="PackedScene" uid="uid://udyrweuqyewc" path="res://GameFiles/Interface/Inventory/InventoryScene.tscn" id="2_vhdfp"]
+[ext_resource type="Texture2D" uid="uid://dpsuu3tr36q8w" path="res://GameFiles/Player/crosshair.512x512.png" id="3_qelow"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8lncp"]
+bg_color = Color(0.831373, 0, 0.329412, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j2x42"]
+bg_color = Color(0.45098, 0.643137, 1, 1)
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="HealthLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+scale = Vector2(0.989688, 0.995369)
+theme_override_font_sizes/font_size = 23
+text = "HEALTH
+"
+
+[node name="HealthBar" type="ProgressBar" parent="HealthLabel"]
+layout_mode = 0
+offset_left = 109.0
+offset_top = 5.0
+offset_right = 243.0
+offset_bottom = 28.0
+theme = ExtResource("1_7osub")
+theme_override_styles/fill = SubResource("StyleBoxFlat_8lncp")
+value = 30.0
+show_percentage = false
+
+[node name="StaminaLabel" type="Label" parent="."]
+layout_mode = 0
+offset_top = 34.0
+offset_right = 163.0
+offset_bottom = 101.0
+theme_override_font_sizes/font_size = 23
+text = "STAMINA
+
+"
+
+[node name="StaminaBar" type="ProgressBar" parent="StaminaLabel"]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 5.0
+offset_right = 242.0
+offset_bottom = 25.0
+theme = ExtResource("1_7osub")
+theme_override_styles/fill = SubResource("StyleBoxFlat_j2x42")
+value = 50.0
+show_percentage = false
+
+[node name="Interact" type="Label" parent="."]
+layout_mode = 0
+offset_left = 469.0
+offset_top = 343.0
+offset_right = 687.0
+offset_bottom = 366.0
+text = "Press F to pick up undefined
+"
+
+[node name="Crosshair_512x512" type="Sprite2D" parent="."]
+position = Vector2(569, 310)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_qelow")
+
+[node name="InventoryScene" parent="." instance=ExtResource("2_vhdfp")]
+layout_mode = 1
+offset_right = 0.0
+offset_bottom = 0.0

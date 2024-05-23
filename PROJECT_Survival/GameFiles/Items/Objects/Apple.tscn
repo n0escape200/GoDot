@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://bd5dl6n0j5jkf"]
+
+[ext_resource type="Script" path="res://GameFiles/Items/Classes/FoodClass.cs" id="1_ynakf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pqc3a"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_4slfs"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_coaj2"]
+albedo_color = Color(0.776471, 0, 0.243137, 1)
+
+[node name="RigidBody3D" type="RigidBody3D"]
+script = ExtResource("1_ynakf")
+Name = "Apple"
+Description = "Fiils ya up, maybe not."
+Type = 1
+InventoryGridSize = Vector2(1, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_pqc3a")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+mesh = SubResource("BoxMesh_4slfs")
+surface_material_override/0 = SubResource("StandardMaterial3D_coaj2")

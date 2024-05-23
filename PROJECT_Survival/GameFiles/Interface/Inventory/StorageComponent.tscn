@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://ds71ss1f1b2vh"]
+
+[ext_resource type="Script" path="res://GameFiles/Interface/Inventory/StorageComponentScript.cs" id="1_3snxq"]
+[ext_resource type="Texture2D" uid="uid://dm44x46d3crdh" path="res://icon.svg" id="2_lyxfx"]
+[ext_resource type="PackedScene" uid="uid://dnseypl5iyvb6" path="res://GameFiles/Interface/Inventory/InventoryGrid.tscn" id="3_7xb75"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4c66c"]
+texture = ExtResource("2_lyxfx")
+
+[node name="ItemScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3snxq")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 0
+offset_right = 50.0
+offset_bottom = 50.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_4c66c")
+
+[node name="GridContainer" parent="." instance=ExtResource("3_7xb75")]
+layout_mode = 0
+offset_left = 56.0
+offset_right = 56.0
+width = 2
+height = 2

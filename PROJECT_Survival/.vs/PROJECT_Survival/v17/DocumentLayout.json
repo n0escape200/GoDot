@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\n0_es\\Desktop\\Projects\\GoDot\\PROJECT_Survival\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CD3B0923-4B6A-4D2C-B074-7B9FE9B52D78}|PROJECT_Survival.csproj|c:\\users\\n0_es\\desktop\\projects\\godot\\project_survival\\gamefiles\\player\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3B0923-4B6A-4D2C-B074-7B9FE9B52D78}|PROJECT_Survival.csproj|solutionrelative:gamefiles\\player\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD3B0923-4B6A-4D2C-B074-7B9FE9B52D78}|PROJECT_Survival.csproj|c:\\users\\n0_es\\desktop\\projects\\godot\\project_survival\\gamefiles\\interface\\items\\itempanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3B0923-4B6A-4D2C-B074-7B9FE9B52D78}|PROJECT_Survival.csproj|solutionrelative:gamefiles\\interface\\items\\itempanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD3B0923-4B6A-4D2C-B074-7B9FE9B52D78}|PROJECT_Survival.csproj|c:\\users\\n0_es\\desktop\\projects\\godot\\project_survival\\gamefiles\\interface\\inventory\\inventoryscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3B0923-4B6A-4D2C-B074-7B9FE9B52D78}|PROJECT_Survival.csproj|solutionrelative:gamefiles\\interface\\inventory\\inventoryscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD3B0923-4B6A-4D2C-B074-7B9FE9B52D78}|PROJECT_Survival.csproj|c:\\users\\n0_es\\desktop\\projects\\godot\\project_survival\\gamefiles\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3B0923-4B6A-4D2C-B074-7B9FE9B52D78}|PROJECT_Survival.csproj|solutionrelative:gamefiles\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerScript.cs",
+              "DocumentMoniker": "C:\\Users\\n0_es\\Desktop\\Projects\\GoDot\\PROJECT_Survival\\GameFiles\\Player\\PlayerScript.cs",
+              "RelativeDocumentMoniker": "GameFiles\\Player\\PlayerScript.cs",
+              "ToolTip": "C:\\Users\\n0_es\\Desktop\\Projects\\GoDot\\PROJECT_Survival\\GameFiles\\Player\\PlayerScript.cs",
+              "RelativeToolTip": "GameFiles\\Player\\PlayerScript.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAowEcAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T20:19:31.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InventoryScene.cs",
+              "DocumentMoniker": "C:\\Users\\n0_es\\Desktop\\Projects\\GoDot\\PROJECT_Survival\\GameFiles\\Interface\\Inventory\\InventoryScene.cs",
+              "RelativeDocumentMoniker": "GameFiles\\Interface\\Inventory\\InventoryScene.cs",
+              "ToolTip": "C:\\Users\\n0_es\\Desktop\\Projects\\GoDot\\PROJECT_Survival\\GameFiles\\Interface\\Inventory\\InventoryScene.cs",
+              "RelativeToolTip": "GameFiles\\Interface\\Inventory\\InventoryScene.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwC4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T19:58:34.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ItemPanel.cs",
+              "DocumentMoniker": "C:\\Users\\n0_es\\Desktop\\Projects\\GoDot\\PROJECT_Survival\\GameFiles\\Interface\\Items\\ItemPanel.cs",
+              "RelativeDocumentMoniker": "GameFiles\\Interface\\Items\\ItemPanel.cs",
+              "ToolTip": "C:\\Users\\n0_es\\Desktop\\Projects\\GoDot\\PROJECT_Survival\\GameFiles\\Interface\\Items\\ItemPanel.cs",
+              "RelativeToolTip": "GameFiles\\Interface\\Items\\ItemPanel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T10:51:56.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InventoryManager.cs",
+              "DocumentMoniker": "C:\\Users\\n0_es\\Desktop\\Projects\\GoDot\\PROJECT_Survival\\GameFiles\\Player\\InventoryManager.cs",
+              "RelativeDocumentMoniker": "GameFiles\\Player\\InventoryManager.cs",
+              "ToolTip": "C:\\Users\\n0_es\\Desktop\\Projects\\GoDot\\PROJECT_Survival\\GameFiles\\Player\\InventoryManager.cs",
+              "RelativeToolTip": "GameFiles\\Player\\InventoryManager.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wC4AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T19:33:21.674Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://dllqn525lm5tg"]
+
+[ext_resource type="PackedScene" uid="uid://eyykqibxh4co" path="res://GameFiles/Player/MainPlayer.tscn" id="1_hqyok"]
+[ext_resource type="PackedScene" uid="uid://bd5dl6n0j5jkf" path="res://GameFiles/Items/Objects/Apple.tscn" id="2_71gp4"]
+[ext_resource type="PackedScene" uid="uid://bw4uw4hxyyuos" path="res://GameFiles/Items/Objects/Backpack.tscn" id="3_1jh21"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5066n"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_oelx5"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[node name="TestingGround" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(17.7212, 0, 0, 0, 0.106044, 0, 0, 0, 21.2894, 0, 0, 0)
+mesh = SubResource("BoxMesh_5066n")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_oelx5")
+
+[node name="MainPlayer" parent="." instance=ExtResource("1_hqyok")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.18317, 1.50559, 1.36343)
+
+[node name="Apple" parent="." instance=ExtResource("2_71gp4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.14611, 2.95324, -0.0894123)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.0375855, 0.999293, 0, -0.999293, -0.0375855, 0, 0, 0)
+
+[node name="Backpack" parent="." instance=ExtResource("3_1jh21")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.280577, 1.59143, -3.80667)

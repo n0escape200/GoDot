@@ -1,0 +1,192 @@
+[gd_scene load_steps=3 format=3 uid="uid://udyrweuqyewc"]
+
+[ext_resource type="Script" path="res://GameFiles/Interface/Inventory/InventoryScene.cs" id="1_7fd08"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_usxwg"]
+bg_color = Color(0.219608, 0.219608, 0.219608, 0.784314)
+
+[node name="InventoryScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7fd08")
+
+[node name="Background" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1150.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_usxwg")
+
+[node name="InventoryList" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 23.0
+offset_right = 655.0
+offset_bottom = 73.0
+
+[node name="VSeparator" type="VSeparator" parent="."]
+layout_mode = 0
+offset_left = 576.0
+offset_right = 580.0
+offset_bottom = 648.0
+
+[node name="HSeparator" type="HSeparator" parent="."]
+layout_mode = 0
+offset_top = 510.0
+offset_right = 576.0
+offset_bottom = 514.0
+
+[node name="Body" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 576.0
+offset_bottom = 510.0
+
+[node name="Head" type="TextureRect" parent="Body"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 64.0
+offset_right = 280.0
+offset_bottom = 104.0
+
+[node name="ColorRect" type="ColorRect" parent="Body/Head"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 1, 1, 0.392157)
+
+[node name="Neck" type="TextureRect" parent="Body"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 120.0
+offset_right = 280.0
+offset_bottom = 160.0
+
+[node name="ColorRect" type="ColorRect" parent="Body/Neck"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 1, 1, 0.392157)
+
+[node name="LeftSholder" type="TextureRect" parent="Body"]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 120.0
+offset_right = 336.0
+offset_bottom = 160.0
+
+[node name="ColorRect" type="ColorRect" parent="Body/LeftSholder"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 1, 1, 0.392157)
+
+[node name="RightSholder" type="TextureRect" parent="Body"]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 120.0
+offset_right = 224.0
+offset_bottom = 160.0
+
+[node name="ColorRect" type="ColorRect" parent="Body/RightSholder"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 1, 1, 0.392157)
+
+[node name="Top" type="TextureRect" parent="Body"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 176.0
+offset_right = 280.0
+offset_bottom = 216.0
+
+[node name="ColorRect" type="ColorRect" parent="Body/Top"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 1, 1, 0.392157)
+
+[node name="Back" type="TextureRect" parent="Body"]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 176.0
+offset_right = 336.0
+offset_bottom = 216.0
+
+[node name="ColorRect" type="ColorRect" parent="Body/Back"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 1, 1, 0.392157)
+
+[node name="Under" type="TextureRect" parent="Body"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 232.0
+offset_right = 280.0
+offset_bottom = 272.0
+
+[node name="ColorRect" type="ColorRect" parent="Body/Under"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 1, 1, 0.392157)
+
+[node name="Pants" type="TextureRect" parent="Body"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 288.0
+offset_right = 280.0
+offset_bottom = 328.0
+
+[node name="ColorRect" type="ColorRect" parent="Body/Pants"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 1, 1, 0.392157)
+
+[node name="Footware" type="TextureRect" parent="Body"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 344.0
+offset_right = 280.0
+offset_bottom = 384.0
+
+[node name="ColorRect" type="ColorRect" parent="Body/Footware"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 1, 1, 0.392157)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_top = 514.0
+offset_right = 67.0
+offset_bottom = 537.0
+text = "In hands
+"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 580.0
+offset_right = 655.0
+offset_bottom = 23.0
+text = "Inventory"
+
+[node name="Hands" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_top = 514.0
+offset_right = 576.0
+offset_bottom = 648.0

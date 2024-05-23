@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://bw4uw4hxyyuos"]
+
+[ext_resource type="Script" path="res://GameFiles/Items/Classes/ClothingClass.cs" id="1_f5xx0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hamar"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_r8qya"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g6364"]
+albedo_color = Color(0.541176, 0.00784314, 1, 1)
+
+[node name="Backpack" type="RigidBody3D"]
+script = ExtResource("1_f5xx0")
+Name = "Backpack"
+Description = "Handy way to store items."
+Type = 7
+InventoryGridSize = Vector2(3, 3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
+shape = SubResource("BoxShape3D_hamar")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+mesh = SubResource("BoxMesh_r8qya")
+surface_material_override/0 = SubResource("StandardMaterial3D_g6364")
